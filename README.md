@@ -7,6 +7,8 @@
     - Ensure semantic HTML and well-structured CSS to enhance accessibility and maintainability.
 - JavaScript
     - Write modular, efficient, and well-documented JavaScript to improve code reusability and debugging.
+- MongoDB
+    - Installation, design efficient schemas, use indexing, and follow best practices for data modeling and performance.
 - Security
     - Always validate user input, sanitize data, and follow security best practices to prevent vulnerabilities.
 - Test-Driven Development
