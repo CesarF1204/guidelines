@@ -13,6 +13,7 @@ Ensure that no sensitive data is stored in session variables. If an attacker gai
 - Before passing data from the controller to the model, the controller should filter and validate inputs, allowing only the necessary parameters required by the model. This helps minimize security vulnerabilities.
 <br>
 <br>
+
 #### We can use express-validator package (https://www.npmjs.com/package/express-validator)
 Read more: https://express-validator.github.io/docs
 #### Installation
