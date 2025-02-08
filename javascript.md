@@ -65,12 +65,12 @@ Use Constants to avoid confusing codes with direct values and make the code more
 
 ```javascript
 //bad
-if(result.value == 1){
+if(result.value === 1){
 	// some code
 }
 
 //good
-if(result.value == CONSTANTS.USER_LEVELS.super_admin){
+if(result.value === CONSTANTS.USER_LEVELS.super_admin){
 	// some code
 }
 ```
