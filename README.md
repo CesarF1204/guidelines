@@ -1,0 +1,15 @@
+### GUIDELINES:
+- Branching
+    - Follow a structured branching strategy like Git Flow to keep code organized and manageable.
+- Code Quality
+    - Write clean, readable, and maintainable code by following best practices and consistent formatting.
+- HTML and CSS
+    - Ensure semantic HTML and well-structured CSS to enhance accessibility and maintainability.
+- JavaScript
+    - Write modular, efficient, and well-documented JavaScript to improve code reusability and debugging.
+- Security
+    - Always validate user input, sanitize data, and follow security best practices to prevent vulnerabilities.
+- Test-Driven Development
+    - Write tests before code to ensure reliability, catch bugs early, and improve maintainability.
+- Team Efficiency
+    - Foster clear communication, code reviews, and collaboration to streamline development workflows.
