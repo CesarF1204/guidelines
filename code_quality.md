@@ -93,3 +93,116 @@ There is also way to add a ToDo for any function/method/class using the **@todo*
 - https://alligator.io/js/jsdoc/https://alligator.io/js/jsdoc/
 - https://medium.com/@imanol_suarez/jsdoc-what-is-that-1d2aa10d9635
 - https://github.com/SAP/openui5/blob/master/docs/guidelines/jsdoc.md (Additional JSDoc Guidelines)
+<br>
+<br>
+
+# DRY (Don't Repeat Yourself) Principle in Software Development
+
+## Introduction
+The DRY (Don't Repeat Yourself) principle is a fundamental concept in software development that encourages reducing code duplication to improve maintainability, scalability, and readability. It promotes reusability by using functions, modules, or libraries to handle repetitive tasks.
+
+## Why Follow DRY?
+- Reduces redundancy
+- Simplifies maintenance
+- Enhances code readability
+- Improves scalability
+- Reduces the chances of errors
+
+## Implementing DRY in MERN (MongoDB, Express, React, Node.js)
+
+### Example 1: Using Helper Functions in Express (Node.js)
+Instead of writing the same logic multiple times, we can create a helper function.
+
+#### ❌ Without DRY:
+```javascript
+app.get("/users", async (req, res) => {
+    const users = await User.find();
+    res.json(users);
+});
+
+app.get("/posts", async (req, res) => {
+    const posts = await Post.find();
+    res.json(posts);
+});
+```
+
+#### ✅ With DRY (Using a Helper Function):
+```javascript
+const fetchData = async (Model, res) => {
+    try {
+        const data = await Model.find();
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
+
+app.get("/users", (req, res) => fetchData(User, res));
+app.get("/posts", (req, res) => fetchData(Post, res));
+```
+
+### Example 2: Reusable React Components
+Instead of writing similar UI components multiple times, create a reusable component.
+
+#### ❌ Without DRY:
+```jsx
+const PrimaryButton = () => (
+    <button style={{ backgroundColor: "blue", color: "white", padding: "10px" }}>Click Me</button>
+);
+
+const SecondaryButton = () => (
+    <button style={{ backgroundColor: "gray", color: "black", padding: "10px" }}>Click Me</button>
+);
+```
+
+#### ✅ With DRY (Using a Reusable Component):
+```jsx
+const Button = ({ label, bgColor, textColor }) => (
+    <button style={{ backgroundColor: bgColor, color: textColor, padding: "10px" }}>
+        {label}
+    </button>
+);
+
+<Button label="Primary" bgColor="blue" textColor="white" />
+<Button label="Secondary" bgColor="gray" textColor="black" />
+```
+
+### Example 3: Using Middleware in Express
+Middleware can be used to avoid repeating authentication logic in multiple routes.
+
+#### ❌ Without DRY:
+```javascript
+app.get("/dashboard", async (req, res) => {
+    const token = req.headers.authorization;
+    if (!token) return res.status(401).json({ message: "Unauthorized" });
+    // Token validation logic here...
+    res.json({ message: "Welcome to Dashboard" });
+});
+
+app.get("/profile", async (req, res) => {
+    const token = req.headers.authorization;
+    if (!token) return res.status(401).json({ message: "Unauthorized" });
+    // Token validation logic here...
+    res.json({ message: "Welcome to Profile" });
+});
+```
+
+#### ✅ With DRY (Using Middleware):
+```javascript
+const authenticate = (req, res, next) => {
+    const token = req.headers.authorization;
+    if (!token) return res.status(401).json({ message: "Unauthorized" });
+    // Token validation logic here...
+    next();
+};
+
+app.get("/dashboard", authenticate, (req, res) => {
+    res.json({ message: "Welcome to Dashboard" });
+});
+
+app.get("/profile", authenticate, (req, res) => {
+    res.json({ message: "Welcome to Profile" });
+});
+```
+
+Applying the DRY principle makes your code more maintainable, reduces errors, and improves efficiency. By using helper functions, reusable components, and middleware, you can significantly enhance the quality of your MERN applications.
