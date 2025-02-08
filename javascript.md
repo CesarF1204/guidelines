@@ -118,7 +118,7 @@ console.log(employee.name); //value is still Cesar Francisco
 ```
 
 ### Cases
-When to use CamelCase or underscore_case? 
+When to use CamelCase or snake_case? 
 
 Class names for controllers, models, and imported/required modules uses camelcase with Uppercase first letter. 
 Methods/functions inside a Class uses camelcase with lowercase first letter.
@@ -147,7 +147,7 @@ class AgencyController {
 ```
 > Additional rule here, in loading dependencies, load third party first, then load configs/helpers, then lastly models. 
 
-Normal variables use underscore case all in lowercase
+Normal variables use snake case all in lowercase
 > Note also to add space after opening curly-brace `{` and before closing curly-brace `}`
 
 ```javascript
