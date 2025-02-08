@@ -2,7 +2,10 @@
 
 ## Backend:
 1. Fork the main or master branch of the repository (ex. Skillura's backend git repository). 
-2. Clone your local repository afterwards.
+2. Create and go to your preferred folder (eg. skillura). Open a terminal under that folder and type `git init` then clone your local repository for backend afterwards.
+    ```
+    git init
+    ```
     ```
     git clone https://github.com/your-username/011-skillura-backend.git
     ```
@@ -27,7 +30,7 @@
 
 ## Frontend:
 1. Fork the main or master branch of the repository (ex. Skillura's frontend git repository). 
-2. Clone your local repository afterwards.
+2. Go to skillura folder that you created then clone your local repository for frontend afterwards.
     ```
     git clone https://github.com/your-username/011-skillura-frontend.git
     ```
