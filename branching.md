@@ -86,6 +86,20 @@
     ```
     *(This merges changes from the remote staging branch into your current branch.)*
 
+
+### Copying remote branch to your local branch
+- Create first a branch that will be used for requesting a PR.
+    1. You should be on staging or production branch. On this tutorial I'll use staging branch.
+        ![Staging Branch](https://i.imgur.com/iVjUwje.png)
+    2. Then click on the branches selection. Type your specified branch name. Then click the "Create Branch [your-specified branch name]"
+        ![Staging Branch](https://i.imgur.com/nDp4Cby.png)
+    3. After creating a branch on the skillura remote repository. You may proceed to copying that remote branch to your local branch. Go your your terminal and type:
+        - Use `git checkout -b [your-branch-local-repo] [remote-name/remote-branch-repo]`
+            ```
+            git checkout -b fix/SK-9999-login-issue skillura_be/fix/SK-9999-login-issue
+            ```
+    4. And you're done! You have created your local branch that is based on the remote branch. You may start fixing the issue. Push it when you're finish and request a PR on the remote branch.
+
 ### 📌Note: When working on a new feature or fixing bugs, use the following branch naming convention:
 
 - For new feature: `feature/[jira-ticket-id]-short-description`
@@ -114,7 +128,7 @@
 ### 5. Merge to Issue Branch (sk-9999)
 - After the code review is completed, an authorized person merges the PR into sk-9999.
 
-### 6.Prepare for Staging Deployment
+### 6. Prepare for Staging Deployment
 - Once sk-9999 has the updated fix, a PR is created to merge sk-9999 into the staging branch.
 - Do not merge immediately—another round of code review is required to check for conflicts or additional issues.
 

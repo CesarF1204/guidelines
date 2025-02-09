@@ -86,7 +86,7 @@ In the bad code example below, noticed how **correct_answer_count** which initia
 Yes, this will work, but it's a pain for other devs who will eventually read and work on top of your code. Do not do this. 
 
 ```javascript
-let correct_answer = 10;                        
+const correct_answer = 10;                        
 
 if(correct_answer_count === undefined){					            
     correct_answer = { total_score: 0, question: {} };

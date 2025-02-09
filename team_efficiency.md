@@ -25,7 +25,7 @@ Below are some actions you can do now which will eventually lead to a much less 
 - Clarify any uncertainties—don’t assume anything when coding.
 
 #### 2. Plan Before You Code
-- For new features or major revisions, create a flowchart.
+- For new features or major revisions, if ever you have blockers or stuck you may create a flowchart.
 - Get approval from your supervisor before proceeding.
 - Map out logic in advance to catch potential loopholes.
 
@@ -53,6 +53,21 @@ Below are some actions you can do now which will eventually lead to a much less 
 - Any error in Jira indicates something is wrong.
 - If an issue is occurring repeatedly for customers, it needs immediate attention.
 
-## Immediate Action Plan
+#### 9. Test Your Code On You Local First
+- Before submitting a pull request (PR), always test your code thoroughly on your local environment to ensure it functions as expected.
+- To prevent conflicts, update your branch with the latest changes from the staging or production branch. This helps keep your codebase up to date and aligned with the team's workflow.
+- If conflicts arise, resolve them immediately and re-test your features to confirm they work correctly after the merge.
+- Regularly pulling updates and testing locally minimizes issues during code reviews and deployments, ensuring a smoother development process.
 
+#### 10. Understand the Features You're Implementing or Testing
+- As a team member, it's essential to have a clear understanding of how a feature works, including its purpose, functionality, and expected behavior.
+- Actively engage with your teammates—ask questions, seek clarifications, and maintain open communication. This ensures you gain the necessary knowledge and guidance to effectively implement or test the feature.
+- Collaborate closely with others to share insights and best practices, fostering a smooth workflow and improving overall team efficiency.
+
+#### 11. UI/UX Collaboration and Best Practices
+- As a team, we may hold meetings to ensure the proper implementation of UI/UX, aligning with best practices and user expectations.
+- Actively participate by sharing your insights, suggestions, and feedback to improve the overall design and usability of the product.
+- Keep user needs and user pain points in mind and be open to constructive feedback to enhance the visual appeal and functionality of the interface.
+
+## Immediate Action Plan
 For projects with active customers, resolving bugs and logged errors is a top priority. Fix issues before they accumulate. Detailed prioritization guidelines will be shared next week, but until then, teams are expected to take initiative and resolve reported issues promptly by following the guidelines above.

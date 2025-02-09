@@ -96,9 +96,118 @@ There is also way to add a ToDo for any function/method/class using the **@todo*
 <br>
 <br>
 
-# DRY (Don't Repeat Yourself) Principle in Software Development
+# Better Comments Plugin
+- A powerful tool that enhances your code commenting experience by enabling different styles and formats to enhance productivity by making comments more meaningful and noticeable.
 
-## Introduction
+### Features
+- Categorize comments with different colors for better readability.
+- Supports highlighting TODOs, questions, warnings, and other custom tags.
+
+### Installation
+1. Open VS Code.
+2. Go to Extensions Marketplace (Ctrl+Shift+X).
+3. Search for Better Comments.
+4. Click Install.
+5. Restart VS Code (if needed).
+
+### Usage
+The plugin categorizes comments based on specific symbols:
+| Symbol | Purpose        | Example |
+|--------|--------------|---------|
+| `*`    | Important    | `/* * This is an important comment */` |
+| `!`    | Warning      | `// ! This is a warning` |
+| `?`    | Question     | `// ? This is a question` |
+| `TODO` | Task Reminder | `// TODO: Fix this bug` |
+| `@`    | Highlight    | `// @ This is a highlighted note` |
+
+
+### Example Usage in JavaScript
+```javascript
+// * This is an important comment
+// ! This is a warning
+// ? This is a question that needs an answer
+// TODO: Refactor this function
+// @ Highlight this section for review
+function example() {
+    console.log("Better Comments Plugin in action!");
+}
+```
+
+### Customizing Better Comments
+To modify the colors and styles, follow these steps:
+
+1. Open **Settings** (`Ctrl + ,`).
+2. Search for `Better Comments`.
+3. Adjust colors and comment styles as needed.
+
+### Benefits of Using Better Comments
+- Improves code readability.
+- Helps in organizing tasks and warnings.
+- Makes code reviews more efficient.
+<br>
+<br>
+
+
+# Using Prettier in VS Code
+**Prettier** is a code formatter that ensures consistent code style across your projects. It helps maintain clean and consistent code, improving collaboration and readability.
+
+## Installation
+To install Prettier in VS Code, follow these steps:
+
+1. Open **VS Code**.
+2. Go to the **Extensions Marketplace** (`Ctrl + Shift + X`).
+3. Search for **Prettier - Code formatter**.
+4. Click **Install**.
+5. Reload or restart VS Code if necessary.
+
+### Configuring Prettier as the Default Formatter
+To set Prettier as your default formatter:
+
+1. Open **Settings** (`Ctrl + ,`).
+2. Search for `editor.defaultFormatter`.
+3. Select **Prettier - Code formatter**.
+4. Enable format on save by searching for `editor.formatOnSave` and checking the box.
+
+### Basic Usage
+Prettier can format code manually or automatically:
+
+- **Format on Save:** Enable `editor.formatOnSave` in settings.
+- **Manual Formatting:** Press `Shift + Alt + F`.
+- **Format a Selection:** Highlight code and press `Ctrl + K Ctrl + F`.
+
+### Customizing Prettier
+Prettier can be customized using a `.prettierrc` file in your project root. Example:
+
+```json
+{
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": false
+}
+```
+
+You can also configure settings in `settings.json` inside VS Code.
+
+### Ignoring Files
+To ignore specific files, create a `.prettierignore` file:
+
+```
+node_modules/
+build/
+dist/
+*.min.js
+```
+
+### Benefits of Using Prettier
+- Ensures **consistent code formatting**.
+- Supports multiple programming **languages and frameworks**.
+- Integrates with **ESLint** for additional linting.
+- Saves time by **automating formatting**.
+<br>
+<br>
+
+# DRY (Don't Repeat Yourself) Principle in Software Development
 The DRY (Don't Repeat Yourself) principle is a fundamental concept in software development that encourages reducing code duplication to improve maintainability, scalability, and readability. It promotes reusability by using functions, modules, or libraries to handle repetitive tasks.
 
 ## Why Follow DRY?
