@@ -1,7 +1,7 @@
 Session/POST Management
 
 #### Avoid Storing Sensitive Information in Sessions
-Ensure that no sensitive data is stored in session variables. If an attacker gains access to someone else's session data in Hacker Hero, they should not be able to exploit it. Do not store sensitive details such as credit card information, passwords, or any other personal data in the session—even if encrypted.
+Ensure that no sensitive data is stored in session variables. If an attacker gains access to someone else's session data, they should not be able to exploit it. Do not store sensitive details such as credit card information, passwords, or any other personal data in the session—even if encrypted.
 
 #### Prevent Session Hijacking
 - Always encrypt session data using a unique encryption key for each user.
