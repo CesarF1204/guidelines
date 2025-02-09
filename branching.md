@@ -95,6 +95,7 @@
         ![Staging Branch](https://i.imgur.com/nDp4Cby.png)
     3. After creating a branch on the skillura remote repository. You may proceed to copying that remote branch to your local branch. Go your your terminal and type:
         - Use `git checkout -b [your-branch-local-repo] [remote-name/remote-branch-repo]`
+            
             ```
             git checkout -b fix/SK-9999-login-issue skillura_be/fix/SK-9999-login-issue
             ```
