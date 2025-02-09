@@ -25,7 +25,7 @@ Below are some actions you can do now which will eventually lead to a much less 
 - Clarify any uncertainties—don’t assume anything when coding.
 
 #### 2. Plan Before You Code
-- For new features or major revisions, if ever you have blockers or stuck you may create a flowchart.
+- For new features or major revisions. If ever you have blockers, you may create a flowchart.
 - Get approval from your supervisor before proceeding.
 - Map out logic in advance to catch potential loopholes.
 
