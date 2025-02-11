@@ -115,19 +115,19 @@ The plugin categorizes comments based on specific symbols:
 | Symbol | Purpose        | Example |
 |--------|--------------|---------|
 | `*`    | Important    | `/* * This is an important comment */` |
-| `!`    | Warning      | `// ! This is a warning` |
-| `?`    | Question     | `// ? This is a question` |
-| `TODO` | Task Reminder | `// TODO: Fix this bug` |
-| `@`    | Highlight    | `// @ This is a highlighted note` |
+| `!`    | Warning      | `/* ! This is a warning` */ |
+| `?`    | Question     | `/* ? This is a question` */ |
+| `TODO` | Task Reminder | `/* TODO: Fix this bug` */ |
+| `@`    | Highlight    | `/* @ This is a highlighted note` */ |
 
 
 ### Example Usage in JavaScript
 ```javascript
-// * This is an important comment
-// ! This is a warning
-// ? This is a question that needs an answer
-// TODO: Refactor this function
-// @ Highlight this section for review
+/* * This is an important comment */
+/* ! This is a warning */
+/* ? This is a question that needs an answer */
+/* TODO: Refactor this function */
+/* @ Highlight this section for review */
 function example() {
     console.log("Better Comments Plugin in action!");
 }
