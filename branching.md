@@ -44,7 +44,7 @@
 
 4. Add skillura remote repository. In your terminal, type:
     ```
-    git remote add skillura_fe https://github.com/AAA-Software/011-skillura-backend.git
+    git remote add skillura_fe https://github.com/AAA-Software/011-skillura-frontend.git
     ```
     This will be the frontend remote repository
 5. Check if origin and skillura_fe is added.
